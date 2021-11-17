@@ -47,7 +47,7 @@ public class Account {
     }
 
     //Virker ikke optimalt – udskriver korrekt men ændrer ikke i saldoerne i toString
-    public String transfer(int transfer, Account destination){
+    public String transfer(double transfer, Account destination){
         double currentTransfer = transfer + 5;
         String print = "";
         try {
