@@ -6,14 +6,14 @@ public class Account {
     private String ownerName;
     private double accountBalance;
 
-    //Give en start-saldo
+    //Starts with a balance
     public Account(String accountNumber, String ownerName, double accountBalance) {
         this.accountNumber = accountNumber;
         this.ownerName = ownerName;
         this.accountBalance = accountBalance;
     }
 
-    //Ingenting som parameter
+    //Has no balance to begin with
     public Account(String accountNumber, String ownerName) {
         this.accountNumber = accountNumber;
         this.ownerName = ownerName;
@@ -46,7 +46,6 @@ public class Account {
         return "Your current balance is: " + accountBalance;
     }
 
-    //Virker ikke optimalt – udskriver korrekt men ændrer ikke i saldoerne i toString
     public String transfer(double transfer, Account destination){
         double currentTransfer = transfer + 5;
         String print = "";
