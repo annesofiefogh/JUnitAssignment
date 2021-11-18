@@ -47,7 +47,9 @@ public class Account {
     }
 
     public String transfer(double transfer, Account destination){
-        double currentTransfer = transfer + 5;
+        double transferFee = 5;
+        double currentTransfer = transfer + transferFee;
+
         String print = "";
         try {
             if (accountBalance - currentTransfer < 0){
